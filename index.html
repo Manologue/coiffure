@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!------- header  ------->
+    <header class="header">
+      <!-- navbar -->
+      <nav class="navbar section-center">
+        <a href="index.html">
+          <img class="logo" src="images/logo.png" alt="" />
+        </a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <!-- links -->
+        <ul class="links">
+          <!-- mon experience coiffure -->
+          <li>
+            <a href="#services">devenir coiffeuse a domicile</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <!--  -->
+          <li>
+            <a href="./products.html">se faire coiffer</a>
+          </li>
+        </ul>
+        <a class="collaborator-link" href="./collaborators/index.html"
+          >devenir coiffeuse a domicile</a
+        >
+      </nav>
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <div id="close-btn" class="fas fa-times"></div>
+
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <!-- mon coiffeur viadom -->
+            <a href="./about.html">a propos</a>
+          </li>
+          <li>
+            <a href="#services">devenir coiffeuse a domicile</a>
+          </li>
+          <!-- mon experience coiffure -->
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <!--  -->
+          <li>
+            <a href="./products.html">se faire coiffer</a>
+          </li>
+        </ul>
+      </aside>
+    </header>
+    <!-- end header -->
+    <!------------------------------ HOME PAGE ----------------------->
+    <main id="home">
+      <!-------- home  -------->
+      <section class="home">
+        <div class="slide active">
+          <div class="content">
+            <img src="images/slider-1.jpg" alt="" />
+            <span>new style 2022</span>
+            <h2>coiffure</h2>
+            <a href="#" class="btn">coiffures disponible</a>
+            <div class="controls">
+              <div target="prev" class="fas fa-angle-left"></div>
+              <div target="next" class="fas fa-angle-right"></div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/slider-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <img src="images/home-img-1.png" alt="" />
+            <span>new style 2022</span>
+            <h2>coiffure</h2>
+            <a href="#" class="btn">coiffures disponible</a>
+            <div class="controls">
+              <div target="prev" class="fas fa-angle-left"></div>
+              <div target="next" class="fas fa-angle-right"></div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/home-img-1.png" alt="" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <img src="images/slider-2.jpg" alt="" />
+            <span>new style 2022</span>
+            <h2>tresse</h2>
+            <a href="#" class="btn">coiffures disponible</a>
+            <div class="controls">
+              <div target="prev" class="fas fa-angle-left"></div>
+              <div target="next" class="fas fa-angle-right"></div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/slider-2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <img src="images/home-img-3.png" alt="" />
+            <span>collection</span>
+            <h2>meches</h2>
+            <a href="#" class="btn">coiffures disponible</a>
+            <div class="controls">
+              <div target="prev" class="fas fa-angle-left"></div>
+              <div target="next" class="fas fa-angle-right"></div>
+            </div>
+          </div>
+          <div class="image">
+            <img src="images/home-img-3.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- end of home -->
+      <!--------- procedure -------->
+      <div class="section procedure">
+        <h4 class="title">Comment ca marche</h4>
+        <div class="title-underline"></div>
+        <div class="section-center procedure-center">
+          <!-- single procedure -->
+          <article class="single-procedure">
+            <i class="fa-solid fa-calendar"></i>
+            <div class="procedure-desc">
+              <h5 class="small-h">choisir date et heure</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+                quisquam.
+              </p>
+            </div>
+          </article>
+          <!-- end of single procedure -->
+          <!-- single procedure -->
+          <article class="single-procedure">
+            <i class="fa-solid fa-message"></i>
+            <div class="procedure-desc">
+              <h5 class="small-h">nous vous contactons</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+                quisquam.
+              </p>
+            </div>
+          </article>
+          <!-- end of single procedure -->
+          <!-- single procedure -->
+          <article class="single-procedure">
+            <i class="fa-solid fa-scissors"></i>
+            <div class="procedure-desc">
+              <h5 class="small-h">votre coiffeur</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+                quisquam.
+              </p>
+            </div>
+          </article>
+          <!-- end of single procedure -->
+        </div>
+      </div>
+      <section class="section search">
+        <h4 class="title">Nom de la ville ou vous souhaiter vous coiffer</h4>
+        <!-- <div class="title-underline"></div> -->
+        <div class="section-center search-center">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Entrer nom de ville ..." />
+            <div class="autocom-box">
+              <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+        </div>
+      </section>
+      <!----------- products layout ----------->
+      <!-- <section class="section products"> -->
+      <!-- <h4 class="title">Notre Gallery</h4> -->
+
+      <!-- <div class="section-center products-center"> -->
+      <!-- <a href="" class="product-card">
+            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
+            <img src="product_image/pexels-ali-pazani-2787341.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe belle</h5>
+              <p><span>60$</span> <span>Lorem, ipsum.</span></p>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
+            <img src="product_image/pexels-anna-shvets-4611959.jpg" alt="" />
+            <div class="product-desc">
+              <h5>tresse de l'eau</h5>
+              <p><span>80$</span> <span>Lorem, ipsum.</span></p>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
+            <img src="product_image/pexels-ayoola-duke-3561145.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>50$</span> <span>Lorem, ipsum.</span></p>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
+            <img src="product_image/pexels-davidowaga-3563869.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>70$</span> <span>Lorem, ipsum.</span></p>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
+            <img src="product_image/pexels-faruk-tokluoğlu-8777575.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>60$</span> <span>Lorem, ipsum.</span></p>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
+            <img src="product_image/pexels-godisable-jacob-718978.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>90$</span> <span>Lorem, ipsum.</span></p>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
+            <img src="product_image/pexels-karl-rayson-10699509.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>50$</span> <span>Lorem, ipsum.</span></p>
+            </div>
+          </a>
+          <a href="" class="product-card">
+            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
+            <img src="product_image/pexels-misho-chachanidze-6874685.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>100$</span> <span>Lorem, ipsum.</span></p>
+            </div>
+          </a> -->
+      <!-- </div> -->
+      <!-- </section> -->
+      <!-- gallery  -->
+      <section class="section gallery-slider">
+        <div class="main-carousel">
+          <div class="cell">
+            <img src="product_image/pexels-ali-pazani-2787341.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="product_image/pexels-anna-shvets-4611959.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="product_image/pexels-ayoola-duke-3561145.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="product_image/pexels-davidowaga-3563869.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="product_image/pexels-faruk-tokluoğlu-8777575.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="product_image/pexels-godisable-jacob-718978.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="product_image/pexels-karl-rayson-10699509.jpg" alt="" />
+          </div>
+          <div class="cell">
+            <img src="product_image/pexels-tomaz-barcellos-1987301.jpg" alt="" />
+          </div>
+        </div>
+        <div class="btn-container">
+          <a class="btn">liste des coiffures</a>
+        </div>
+      </section>
+      <section class="collaboration">
+        <div class="section-center collaboration-center">
+          <h5>Nous recrutons des coiffeurs compétent</h5>
+          <p>Rejoignez nous pour aporter vos service en tant que coiffeur à domicile</p>
+          <a class="btn">S'inscrire en tant que coiffeur</a>
+        </div>
+      </section>
+    </main>
+    <!------------------------------END OF HOME PAGE  ----------------------------->
+    <footer class="section footer">
+      <div class="section-center footer-center">
+        <div class="links-container">
+          <h5>Quick Links</h5>
+          <ul>
+            <li>
+              <a href="">><span>Home</span></a>
+            </li>
+            <li>
+              <a href="">><span>About</span></a>
+            </li>
+            <li>
+              <a href="">><span>Services</span></a>
+            </li>
+            <li>
+              <a href="">><span>Products</span></a>
+            </li>
+            <li>
+              <a href="">><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="links-container">
+          <h5>Extra Links</h5>
+          <ul>
+            <li>
+              <a href="">><span>Terms & Conditions</span></a>
+            </li>
+            <li>
+              <a href="">><span>Privacy Policy</span></a>
+            </li>
+            <li>
+              <a href="">><span>Refund Policy</span></a>
+            </li>
+            <li>
+              <a href="">><span>FAQ</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h5>Contact Info</h5>
+          <p><span>+237656412578</span></p>
+          <p><span>+237678102365</span></p>
+          <p><span>mano@Gmail.Com</span></p>
+          <p><span>yde 14</span></p>
+          <div class="contact-icons">
+            <a href="">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="newsletter-container">
+          <h5>Newsletter</h5>
+          <p>Subscribe For Latest Updates</p>
+          <form action="">
+            <input type="email" placeholder="enter your email..." />
+            <input class="btn newsletter-btn" type="submit" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- custom js file link -->
+    <!-- carousel img -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- app js -->
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
