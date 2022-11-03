@@ -1295,7 +1295,7 @@ HOME PAGE
   align-items: center;
   justify-content: center;
   border-radius: 60px;
-  padding: 10px 20px;
+  padding: 10px;
   -webkit-backdrop-filter: blur(4px) saturate(180%);
           backdrop-filter: blur(4px) saturate(180%);
 }
@@ -1304,7 +1304,7 @@ HOME PAGE
   flex: 1;
   border: 0;
   outline: none;
-  padding: 24px 20px;
+  padding: 20px;
   font-size: 20px;
   color: #cac7ff;
 }
@@ -1318,15 +1318,15 @@ HOME PAGE
   color: #cac7ff;
 }
 #search-town-page .search-bar button img {
-  width: 25px;
+  width: 20px;
 }
 #search-town-page .search-bar button {
   display: grid;
   place-items: center;
   border: 0;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: #58629b;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
