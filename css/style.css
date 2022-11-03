@@ -1272,4 +1272,61 @@ HOME PAGE
   #products-page .products-center {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+#search-town-page .section {
+  background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.9)), url(../../product_image/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#search-town-page .container {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+}
+#search-town-page h4 {
+  color: white;
+}
+#search-town-page .search-bar {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  -webkit-backdrop-filter: blur(4px) saturate(180%);
+          backdrop-filter: blur(4px) saturate(180%);
+}
+#search-town-page .search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+#search-town-page ::-moz-placeholder {
+  color: #cac7ff;
+}
+#search-town-page :-ms-input-placeholder {
+  color: #cac7ff;
+}
+#search-town-page ::placeholder {
+  color: #cac7ff;
+}
+#search-town-page .search-bar button img {
+  width: 25px;
+}
+#search-town-page .search-bar button {
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #58629b;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
