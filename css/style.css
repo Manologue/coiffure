@@ -883,6 +883,7 @@ HOME PAGE
 #home .why-section h5 {
   color: var(--white);
   font-weight: normal;
+  line-height: 1.4;
 }
 #home .why-section p {
   color: var(--grey-300);
