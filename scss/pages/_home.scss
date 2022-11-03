@@ -94,6 +94,26 @@ HOME PAGE
   .slide.active {
     display: flex;
   }
+
+  .action {
+    background: var(--tertiaryColor);
+  }
+  .action-center {
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  .action-center p {
+    // background: red;
+    margin: 0 auto;
+    font-size: 1.25rem;
+  }
+  .action-center .container h4 {
+    color: var(--white) !important ;
+  }
+
   /* 
   =============
   procedures
@@ -199,7 +219,41 @@ HOME PAGE
       cursor: pointer;
     }
   }
+
+  .why-section {
+    background: var(--tertiaryColor);
+    .description-container {
+      width: 90%;
+    }
+    h4,
+    h5 {
+      color: var(--white);
+      font-weight: normal;
+    }
+    p {
+      color: var(--grey-300);
+    }
+    .img-container {
+      margin-bottom: 2rem;
+    }
+    .img-container img {
+      border-radius: 10px;
+    }
+    @media screen and (min-width: 768px) {
+      .why-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+      }
+      .img-container img {
+        height: 100%;
+      }
+    }
+  }
+
   .gallery-slider {
+    background: var(--secondaryColor);
+
     .cell {
       width: 33%;
       height: 350px;
@@ -215,10 +269,188 @@ HOME PAGE
 
     .btn-container {
       text-align: center;
-      margin: 6rem 0rem auto;
+      margin: 3rem;
     }
     .btn {
       background: var(--primary-400);
+    }
+  }
+
+  .testimonials {
+    .wrapper {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .wrapper .box {
+      background: #fff;
+      width: calc(33% - 10px);
+      padding: 25px;
+      border-radius: 3px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    .wrapper .box i.quote {
+      font-size: 20px;
+      color: var(--primary-100);
+    }
+    .wrapper .box .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px;
+    }
+    .box .info .name {
+      font-weight: 600;
+      font-size: 17px;
+    }
+    .box .info .job {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--grey-1800);
+    }
+    .box .info .stars {
+      margin-top: 2px;
+    }
+    .box .info .stars i {
+      color: var(--grey-1600);
+    }
+    .box .content .image {
+      height: 75px;
+      width: 75px;
+      padding: 3px;
+
+      border-radius: 50%;
+    }
+    .content .image img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+    .box:hover .content .image img {
+      border-color: #fff;
+    }
+
+    @media (max-width: 1045px) {
+      .wrapper .box {
+        width: calc(50% - 10px);
+        margin: 10px 0;
+      }
+    }
+    @media (max-width: 702px) {
+      .wrapper .box {
+        width: 100%;
+      }
+    }
+  }
+
+  .faq-section {
+    // .container {
+    //   margin: 0 auto;
+    //   padding: 4rem;
+    //   width: 48rem;
+    // }
+
+    .accordion .accordion-item {
+      border-bottom: 1px solid var(--primary-100);
+    }
+
+    .accordion .accordion-item button[aria-expanded='true'] {
+      border-bottom: 1px solid var(--primary-100);
+    }
+
+    .accordion button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1em 0;
+      color: #7288a2;
+      font-size: 1.15rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    .accordion button:hover,
+    .accordion button:focus {
+      cursor: pointer;
+      color: var(--primary-100);
+    }
+
+    .accordion button:hover::after,
+    .accordion button:focus::after {
+      cursor: pointer;
+      color: var(--primary-100);
+      border: 1px solid var(--primary-100);
+    }
+
+    .accordion button .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+
+    .accordion button .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+    }
+
+    .accordion button .icon::before {
+      display: block;
+      position: absolute;
+      content: '';
+      top: 9px;
+      left: 5px;
+      width: 10px;
+      height: 2px;
+      background: currentColor;
+    }
+    .accordion button .icon::after {
+      display: block;
+      position: absolute;
+      content: '';
+      top: 5px;
+      left: 9px;
+      width: 2px;
+      height: 10px;
+      background: currentColor;
+    }
+
+    .accordion button[aria-expanded='true'] {
+      color: var(--primary-100);
+    }
+    .accordion button[aria-expanded='true'] .icon::after {
+      width: 0;
+    }
+    .accordion button[aria-expanded='true'] + .accordion-content {
+      opacity: 1;
+      max-height: 9em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+    .accordion .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+    }
+    .accordion .accordion-content p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 2em 0;
     }
   }
   /* 

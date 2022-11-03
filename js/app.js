@@ -1,5 +1,6 @@
 // components
-import "./components/header.js";
+import './components/header.js'
+// import './components/filterIsotope.js'
 
 // pages
-import "./pages/home.js";
+import './pages/home.js'
