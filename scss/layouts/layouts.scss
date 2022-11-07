@@ -36,14 +36,14 @@ HEADER
   // margin-right: 15%;
 }
 
-.navbar .links li:last-child::after {
-  content: '';
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  height: 3px;
-  background: var(--primary-500);
-}
+// .navbar .links li:last-child::after {
+//   content: '';
+//   display: block;
+//   width: 80%;
+//   margin: 0 auto;
+//   height: 3px;
+//   background: var(--primary-500);
+// }
 .navbar .links li > a {
   color: var(--grey-2000);
   font-weight: bold;
@@ -52,7 +52,9 @@ HEADER
   transition: var(--transition);
   font-size: 1.1rem;
 }
-
+.btn {
+  color: white;
+}
 .navbar .links li:hover > a {
   color: var(--primary-400);
 }
