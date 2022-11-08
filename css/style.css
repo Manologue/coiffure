@@ -701,11 +701,11 @@ FOOTER
 }
 @media screen and (min-width: 1200px) {
   .results .results-center {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 .results .results-center .article {
+  margin-bottom: 1rem;
   box-shadow: var(--shadow-3);
   padding: 0.65rem 1.2rem;
   background: var(--white);
