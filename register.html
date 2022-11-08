@@ -16,8 +16,12 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
   </head>
   <body>
     <!------- header  ------->
@@ -34,19 +38,15 @@
         <ul class="links">
           <!-- mon experience coiffure -->
           <li>
-            <a href="#services">devenir coiffeuse a domicile</a>
+            <a class="btn btn-coiffe" href="index.html#services">Services</a>
           </li>
           <li>
-            <a href="#services">Services</a>
-          </li>
-          <!--  -->
-          <li>
-            <a href="./searchTown.html">se faire coiffer</a>
+            <a class="btn btn-coiffe btn-stylist" href="register.html"
+              >devenir coiffeur a domicile</a
+            >
           </li>
         </ul>
-        <a class="collaborator-link" href="./collaborators/index.html"
-          >devenir coiffeuse a domicile</a
-        >
+        <a class="collaborator-link" href="register.html">devenir coiffeur a domicile</a>
       </nav>
       <!-- sidebar -->
       <aside class="sidebar">
@@ -55,33 +55,92 @@
         <!-- links -->
         <ul class="links">
           <li>
-            <a href="#services">devenir coiffeuse a domicile</a>
+            <a href="index.html#services">Services</a>
           </li>
-          <!-- mon experience coiffure -->
           <li>
-            <a href="#services">Services</a>
-          </li>
-          <!--  -->
-          <li>
-            <a href="./searchTown.html">se faire coiffer</a>
+            <a href="register.html">devenir coiffeur a domicile</a>
           </li>
         </ul>
       </aside>
     </header>
     <!-- end header -->
-    <!------------------------------ HOME PAGE ----------------------->
-    <main id="search-town-page">
-      <section class="section">
-        <div class="container section-center">
-          <h4 class="title">veillez Entrer le nom de votre ville</h4>
-          <form action="./products.html" class="search-bar">
-            <input type="text" placeholder="search anything" name="q" />
-            <button type="submit"><img src="product_image/search.png" alt="" /></button>
-          </form>
+
+    <main id="register-page">
+      <section class="section register-section">
+        <div class="section-center">
+          <h5>sinscrire comme coiffeur mobile</h5>
+          <div class="register-center">
+            <!-- desc -->
+            <div class="short-description">
+              <div class="text-container">
+                <p>
+                  Be a Part of The First Network of Mobile Hairstylists & Mobile Barbers.
+                </p>
+                <div>
+                  <p>Create your profile in a few steps :</p>
+                  <ul>
+                    <li>Create your account and enter your details</li>
+                    <li>Create your account and enter your details</li>
+                    <li>Create your account and enter your details</li>
+                    <li>Create your account and enter your details</li>
+                  </ul>
+                </div>
+                <p>
+                  Not sure what you would do with DashStylists.com ? Take 5 min and check
+                  the
+                  <span><a href="#">FAQ here</a></span>
+                </p>
+                <p>Still got questions ? Give us a call : 404-960-1747</p>
+              </div>
+            </div>
+            <!-- form  -->
+            <form>
+              <div class="form-row">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  placeholder="hello there"
+                  id="name"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-row">
+                <label for="lname" class="form-label">Last name</label>
+                <input
+                  type="text"
+                  placeholder="hello there"
+                  id="lname"
+                  class="form-input"
+                />
+              </div>
+              <div class="form-row">
+                <label for="adress" class="form-label">Adress</label>
+                <input type="text" id="adress" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label for="code_postal" class="form-label">Code postal</label>
+                <input type="text" id="code_postal" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label for="number" class="form-label">Number</label>
+                <input type="number" id="number" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-input" />
+                <small class="form-alert">please provide value</small>
+              </div>
+              <div class="form-row">
+                <label for="textarea" class="form-label">Demande particuliere</label>
+                <textarea class="form-textarea"></textarea>
+              </div>
+              <button type="submit" class="btn btn-block">S'inscrire</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
-    <!------------------------------END OF HOME PAGE  ----------------------------->
+
     <footer class="section footer">
       <div class="section-center footer-center">
         <div class="links-container">
@@ -153,9 +212,10 @@
       </div>
     </footer>
     <!-- custom js file link -->
-    <!-- carousel img -->
+    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- app js -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script type="module" src="js/app.js"></script>
   </body>
 </html>

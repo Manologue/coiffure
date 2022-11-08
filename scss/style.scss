@@ -1,10 +1,15 @@
+// init
 @use 'config/variables';
 @use 'global/globalstyles';
-
 @use 'layouts/layouts.scss';
 
+// compoments
+@use 'components/searchFrom';
+@use 'components/results';
+
+// pages
 @use 'pages/home';
-@use 'pages/products';
-@use 'pages/product';
-@use 'pages/searchTown';
+@use 'pages/search';
 @use 'pages/commande';
+@use 'pages/services';
+@use 'pages/register';

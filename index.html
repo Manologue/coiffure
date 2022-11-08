@@ -39,17 +39,15 @@
         <ul class="links">
           <!-- mon experience coiffure -->
           <li>
-            <a href="#services">Services</a>
+            <a class="btn btn-coiffe" href="index.html#services">Services</a>
           </li>
           <li>
-            <a class="btn btn-coiffe" href="inscription_coiffe.html"
-              >devenir coiffeuse a domicile</a
+            <a class="btn btn-coiffe btn-stylist" href="register.html"
+              >devenir coiffeur a domicile</a
             >
           </li>
         </ul>
-        <a class="collaborator-link" href="./collaborators/index.html"
-          >devenir coiffeuse a domicile</a
-        >
+        <a class="collaborator-link" href="register.html">devenir coiffeur a domicile</a>
       </nav>
       <!-- sidebar -->
       <aside class="sidebar">
@@ -58,15 +56,10 @@
         <!-- links -->
         <ul class="links">
           <li>
-            <a href="#services">devenir coiffeuse a domicile</a>
+            <a href="index.html#services">Services</a>
           </li>
-          <!-- mon experience coiffure -->
           <li>
-            <a href="#services">Services</a>
-          </li>
-          <!--  -->
-          <li>
-            <a href="./searchTown.html">se faire coiffer</a>
+            <a href="register.html">devenir coiffeur a domicile</a>
           </li>
         </ul>
       </aside>
@@ -76,64 +69,30 @@
     <main id="home">
       <!-------- home  -------->
       <section class="home">
-        <div class="slide active">
+        <div class="slide">
           <div class="content">
             <img src="images/slider-1.jpg" alt="" />
-            <span>new style 2022</span>
-            <h2>coiffure</h2>
-            <a href="./searchTown.html" class="btn">se faire coiffer</a>
-            <div class="controls">
-              <div target="prev" class="fas fa-angle-left"></div>
-              <div target="next" class="fas fa-angle-right"></div>
-            </div>
+            <span>TROUVER UN COIFFEUR PRÈS DE CHEZ VOUS</span>
+            <form class="home-form" action="search.html">
+              <div class="field">
+                <input type="text" name="location" placeholder="where" />
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="field">
+                <input type="text" name="services" placeholder="Enter services" />
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <div class="field">
+                <input type="date" name="day" placeholder="Enter day" />
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <div class="field search">
+                <button class="btn" type="submit">search</button>
+              </div>
+            </form>
           </div>
           <div class="image">
             <img src="images/slider-1.jpg" alt="" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="content">
-            <img src="images/home-img-1.png" alt="" />
-            <span>new style 2022</span>
-            <h2>coiffure</h2>
-            <a href="./searchTown.html" class="btn">se faire coiffer</a>
-            <div class="controls">
-              <div target="prev" class="fas fa-angle-left"></div>
-              <div target="next" class="fas fa-angle-right"></div>
-            </div>
-          </div>
-          <div class="image">
-            <img src="images/home-img-1.png" alt="" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="content">
-            <img src="images/slider-2.jpg" alt="" />
-            <span>new style 2022</span>
-            <h2>tresse</h2>
-            <a href="./searchTown.html" class="btn">se faire coiffer</a>
-            <div class="controls">
-              <div target="prev" class="fas fa-angle-left"></div>
-              <div target="next" class="fas fa-angle-right"></div>
-            </div>
-          </div>
-          <div class="image">
-            <img src="images/slider-2.jpg" alt="" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="content">
-            <img src="images/home-img-3.png" alt="" />
-            <span>collection</span>
-            <h2>meches</h2>
-            <a href="./searchTown.html" class="btn">se faire coiffer</a>
-            <div class="controls">
-              <div target="prev" class="fas fa-angle-left"></div>
-              <div target="next" class="fas fa-angle-right"></div>
-            </div>
-          </div>
-          <div class="image">
-            <img src="images/home-img-3.png" alt="" />
           </div>
         </div>
       </section>
@@ -205,77 +164,7 @@
           </div>
         </div>
       </section> -->
-      <!----------- products layout ----------->
-      <!-- <section class="section products"> -->
-      <!-- <h4 class="title">Notre Gallery</h4> -->
 
-      <!-- <div class="section-center products-center"> -->
-      <!-- <a href="" class="product-card">
-            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
-            <img src="product_image/pexels-ali-pazani-2787341.jpg" alt="" />
-            <div class="product-desc">
-              <h5>la coupe belle</h5>
-              <p><span>60$</span> <span>Lorem, ipsum.</span></p>
-            </div>
-          </a>
-          <a href="" class="product-card">
-            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
-            <img src="product_image/pexels-anna-shvets-4611959.jpg" alt="" />
-            <div class="product-desc">
-              <h5>tresse de l'eau</h5>
-              <p><span>80$</span> <span>Lorem, ipsum.</span></p>
-            </div>
-          </a>
-          <a href="" class="product-card">
-            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
-            <img src="product_image/pexels-ayoola-duke-3561145.jpg" alt="" />
-            <div class="product-desc">
-              <h5>la coupe boule</h5>
-              <p><span>50$</span> <span>Lorem, ipsum.</span></p>
-            </div>
-          </a>
-          <a href="" class="product-card">
-            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
-            <img src="product_image/pexels-davidowaga-3563869.jpg" alt="" />
-            <div class="product-desc">
-              <h5>la coupe boule</h5>
-              <p><span>70$</span> <span>Lorem, ipsum.</span></p>
-            </div>
-          </a>
-          <a href="" class="product-card">
-            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
-            <img src="product_image/pexels-faruk-tokluoğlu-8777575.jpg" alt="" />
-            <div class="product-desc">
-              <h5>la coupe boule</h5>
-              <p><span>60$</span> <span>Lorem, ipsum.</span></p>
-            </div>
-          </a>
-          <a href="" class="product-card">
-            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
-            <img src="product_image/pexels-godisable-jacob-718978.jpg" alt="" />
-            <div class="product-desc">
-              <h5>la coupe boule</h5>
-              <p><span>90$</span> <span>Lorem, ipsum.</span></p>
-            </div>
-          </a>
-          <a href="" class="product-card">
-            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
-            <img src="product_image/pexels-karl-rayson-10699509.jpg" alt="" />
-            <div class="product-desc">
-              <h5>la coupe boule</h5>
-              <p><span>50$</span> <span>Lorem, ipsum.</span></p>
-            </div>
-          </a>
-          <a href="" class="product-card">
-            <div class="hover-screen"><p>je choissi cette choiffure</p></div>
-            <img src="product_image/pexels-misho-chachanidze-6874685.jpg" alt="" />
-            <div class="product-desc">
-              <h5>la coupe boule</h5>
-              <p><span>100$</span> <span>Lorem, ipsum.</span></p>
-            </div>
-          </a> -->
-      <!-- </div> -->
-      <!-- </section> -->
       <!-- gallery  -->
       <section class="section why-section">
         <div class="section-center why-center">
@@ -307,11 +196,11 @@
                 </p>
               </div>
             </div>
-            <a href="./searchTown.html" class="btn">se faire coiffer</a>
+            <!-- <a href="./searchTown.html" class="btn">se faire coiffer</a> -->
           </div>
         </div>
       </section>
-      <section class="section gallery-slider">
+      <!-- <section class="section gallery-slider">
         <div class="main-carousel section-center">
           <div class="cell">
             <img src="product_image/pexels-ali-pazani-2787341.jpg" alt="" />
@@ -340,6 +229,77 @@
         </div>
         <div class="btn-container">
           <a href="./searchTown.html" class="btn">se faire coiffer</a>
+        </div>
+      </section> -->
+      <!----------- products layout ----------->
+      <section class="section services" id="services">
+        <h4 style="color: white" class="title">Nos services</h4>
+
+        <div class="section-center services-center">
+          <a href="services.html" class="product-card">
+            <div class="hover-screen"></div>
+            <img src="product_image/pexels-ali-pazani-2787341.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe belle</h5>
+              <p><span>a domicile</span></p>
+            </div>
+          </a>
+          <a href="services.html" class="product-card">
+            <div class="hover-screen"></div>
+            <img src="product_image/pexels-anna-shvets-4611959.jpg" alt="" />
+            <div class="product-desc">
+              <h5>tresse de l'eau</h5>
+              <p><span>a domicile</span></p>
+            </div>
+          </a>
+          <a href="services.html" class="product-card">
+            <div class="hover-screen"></div>
+            <img src="product_image/pexels-ayoola-duke-3561145.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>a domicile</span></p>
+            </div>
+          </a>
+          <a href="services.html" class="product-card">
+            <div class="hover-screen"></div>
+            <img src="product_image/pexels-davidowaga-3563869.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>a domicile</span></p>
+            </div>
+          </a>
+          <a href="services.html" class="product-card">
+            <div class="hover-screen"></div>
+            <img src="product_image/pexels-faruk-tokluoğlu-8777575.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>a domicile</span></p>
+            </div>
+          </a>
+          <a href="services.html" class="product-card">
+            <div class="hover-screen"></div>
+            <img src="product_image/pexels-godisable-jacob-718978.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>a domicile</span></p>
+            </div>
+          </a>
+          <a href="services.html" class="product-card">
+            <div class="hover-screen"></div>
+            <img src="product_image/pexels-karl-rayson-10699509.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>a domicile</span></p>
+            </div>
+          </a>
+          <a href="services.html" class="product-card">
+            <div class="hover-screen"></div>
+            <img src="product_image/pexels-misho-chachanidze-6874685.jpg" alt="" />
+            <div class="product-desc">
+              <h5>la coupe boule</h5>
+              <p><span>a domicile</span></p>
+            </div>
+          </a>
         </div>
       </section>
       <section class="section testimonials">
@@ -497,7 +457,7 @@
         <div class="section-center collaboration-center">
           <h5>Nous recrutons des coiffeurs compétent</h5>
           <p>Rejoignez nous pour aporter vos service en tant que coiffeur à domicile</p>
-          <a class="btn">S'inscrire en tant que coiffeur</a>
+          <a href="register.html" class="btn">Devenir coiffeur a domicile</a>
         </div>
       </section>
     </main>

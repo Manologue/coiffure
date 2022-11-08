@@ -307,3 +307,12 @@ icons on bottom*/
 .loading {
   margin: 0 auto;
 }
+
+// added
+.sticky {
+  box-shadow: var(--shadow-3);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
