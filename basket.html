@@ -65,83 +65,109 @@
     </header>
     <!-- end header -->
 
-    <main id="register-page">
-      <section class="section register-section">
-        <div class="section-center">
-          <h5>sinscrire comme coiffeur mobile</h5>
-          <div class="register-center">
-            <!-- desc -->
-            <div class="short-description">
-              <div class="text-container">
-                <p>
-                  Be a Part of The First Network of Mobile Hairstylists & Mobile Barbers.
-                </p>
-                <div>
-                  <p>Create your profile in a few steps :</p>
-                  <ul>
-                    <li>Create your account and enter your details</li>
-                    <li>Create your account and enter your details</li>
-                    <li>Create your account and enter your details</li>
-                    <li>Create your account and enter your details</li>
-                  </ul>
+    <main class="main" id="basket-page">
+      <div class="section-center basket-center">
+        <div class="cart">
+          <div class="cart-center">
+            <div class="cart-container">
+              <p class="title">Un rendez vous avec:</p>
+              <div class="booking">
+                <div class="head">
+                  <div class="img-container">
+                    <img src="./product_image/pexels-davidowaga-3563869.jpg" alt="" />
+                    <span>Victoria M</span>
+                  </div>
+                  <span><span class="total-text">Total:</span> $56</span>
                 </div>
-                <p>
-                  Not sure what you would do with DashStylists.com ? Take 5 min and check
-                  the
-                  <span><a href="#">FAQ here</a></span>
-                </p>
-                <p>Still got questions ? Give us a call : 404-960-1747</p>
+              </div>
+              <div class="destination">
+                <div class="head">
+                  <span
+                    ><i class="fa-solid fa-location-dot"></i> Destination address</span
+                  >
+                  <a href="#">modifier</a>
+                </div>
+                <div class="info">
+                  <p>
+                    Hartsfield-Jackson Atlanta International Airport, 6000 N Terminal
+                    Pkwy, Atlanta, GA 30320, United States
+                  </p>
+                </div>
+              </div>
+              <div class="services-cart">
+                <div class="head">
+                  <span
+                    ><i class="fa-solid fa-cart-shopping"></i> Services selectionnes</span
+                  >
+                  <a href="#">modifier</a>
+                </div>
+                <div class="info">
+                  <div class="details">
+                    <p>In-service Haircut (With Chemicals ONLY!)</p>
+                    <span>15 minutes</span>
+                  </div>
+                  <span class="price">10$ </span>
+                </div>
+                <div class="info">
+                  <div class="details">
+                    <p>In-service Haircut (With Chemicals ONLY!)</p>
+                    <span>15 minutes</span>
+                  </div>
+                  <span class="price">10$ </span>
+                </div>
               </div>
             </div>
-            <!-- form  -->
-            <form>
-              <div class="form-row">
-                <label for="name" class="form-label">Name</label>
-                <input
-                  type="text"
-                  placeholder="hello there"
-                  id="name"
-                  class="form-input"
-                />
-              </div>
-              <div class="form-row">
-                <label for="lname" class="form-label">Last name</label>
-                <input
-                  type="text"
-                  placeholder="hello there"
-                  id="lname"
-                  class="form-input"
-                />
-              </div>
-              <div class="form-row">
-                <label for="adress" class="form-label">Adress</label>
-                <input type="text" id="adress" class="form-input" />
-              </div>
-              <div class="form-row">
-                <label for="code_postal" class="form-label">Code postal</label>
-                <input type="text" id="code_postal" class="form-input" />
-              </div>
-              <div class="form-row">
-                <label for="number" class="form-label">Number</label>
-                <input type="number" id="number" class="form-input" />
-              </div>
-              <div class="form-row">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-input" />
-                <small class="form-alert">please provide value</small>
-              </div>
-              <div class="form-row">
-                <label for="textarea" class="form-label">Demande particuliere</label>
-                <textarea class="form-textarea"></textarea>
-              </div>
-              <button type="submit" class="btn btn-block">S'inscrire</button>
-              <a class="login" href="./login.html">
-                Deja un compte? Click pour te connecter</a
-              >
-            </form>
+            <!-- <a class="btn cart-btn" href="./basket.html">fixer un rendez-vous</a> -->
           </div>
         </div>
-      </section>
+        <form>
+          <h5>Formulaire<span> Contact</span></h5>
+          <div class="form-row">
+            <label for="date" class="form-label">Date</label>
+            <input
+              type="datetime-local"
+              placeholder="Choisir une date"
+              id="date"
+              class="form-input"
+            />
+          </div>
+          <div class="form-row">
+            <label for="time" class="form-label">Time</label>
+            <select class="form-input" name="time" id="time">
+              <option value="">8am - 12pm</option>
+              <option value="">12am - 2pm</option>
+              <option value="">2pm - 6pm</option>
+              <option value="">6pm - 8pm</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" placeholder="hello there" id="name" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="adress" class="form-label">Adress</label>
+            <input type="text" id="adress" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="code_postal" class="form-label">Code postal</label>
+            <input type="text" id="code_postal" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="number" class="form-label">Number</label>
+            <input type="number" id="number" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-input" />
+            <small class="form-alert">please provide value</small>
+          </div>
+          <div class="form-row">
+            <label for="textarea" class="form-label">Demande particuliere</label>
+            <textarea class="form-textarea"></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">Confirmer</button>
+        </form>
+      </div>
     </main>
 
     <footer class="section footer">

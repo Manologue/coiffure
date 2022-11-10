@@ -1314,6 +1314,7 @@ HOME PAGE
   height: 85vh;
   background-size: cover;
   background-position: -100% 20%;
+  background-repeat: no-repeat;
   color: white;
   display: flex;
   align-items: center;
@@ -1374,12 +1375,20 @@ HOME PAGE
     grid-template-rows: auto;
     grid-template-areas: "a b";
   }
+  #register-page form label {
+    font-size: 0.85rem;
+  }
 }
 #register-page .short-description {
   grid-area: b;
 }
 #register-page form {
   grid-area: a;
+}
+#register-page form .login {
+  margin-top: 2rem !important;
+  text-decoration: underline !important;
+  display: block;
 }
 #register-page .text-container div > p {
   margin: 0;
@@ -1391,6 +1400,352 @@ HOME PAGE
   margin-bottom: 1rem;
   list-style-type: disc;
 }
-#register-page form label {
+
+#stylist-page {
+  padding: 5rem 0;
+  background: var(--grey-100);
+}
+#stylist-page .section {
+  padding: 0;
+  padding-bottom: 1.25rem;
+}
+#stylist-page .stylist-div {
+  padding: 1.5rem 1rem;
+}
+#stylist-page .cart-btn {
+  background: #f9af00;
   font-size: 0.85rem;
+}
+#stylist-page .alert-section .alert-center {
+  background: #fbebed;
+  border: dotted 1px var(--red-dark);
+  border-radius: var(--borderRadius);
+}
+#stylist-page .alert-section span {
+  font-weight: bolder;
+}
+#stylist-page .alert-section i {
+  color: var(--primary-300);
+}
+#stylist-page .alert-section span,
+#stylist-page .alert-section p {
+  color: var(--red-dark);
+}
+#stylist-page .alert-section a {
+  width: 100%;
+  text-align: center;
+  max-width: 300px;
+}
+#stylist-page .cart p {
+  margin: 0;
+}
+#stylist-page .cart .cart-center {
+  background: var(--white);
+}
+#stylist-page .cart .cart-center a.btn {
+  width: 100%;
+  text-align: center;
+  max-width: 400px;
+}
+#stylist-page .cart .title {
+  width: 100%;
+  margin: 0 auto;
+}
+#stylist-page .cart .booking {
+  margin: 1rem 0;
+}
+#stylist-page .cart .booking img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#stylist-page .cart .booking .img-container {
+  display: flex;
+  gap: 0.3rem;
+}
+#stylist-page .cart .booking .total-text {
+  font-weight: normal !important;
+}
+#stylist-page .cart .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px var(--grey-200);
+}
+#stylist-page .cart .info.empty {
+  font-style: italic;
+}
+#stylist-page .cart .info,
+#stylist-page .cart .head {
+  padding: 0.5rem;
+}
+#stylist-page .cart .head {
+  display: flex;
+  justify-content: space-between;
+}
+#stylist-page .cart .head span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: bolder;
+}
+#stylist-page .cart .head span i {
+  font-size: 1.3rem;
+}
+#stylist-page .cart .head a {
+  color: var(--primary-400);
+  text-decoration: underline;
+}
+#stylist-page .cart .destination,
+#stylist-page .cart .services-cart {
+  margin-bottom: 2rem;
+}
+#stylist-page .cart .services-cart .price {
+  display: flex;
+  gap: 0.3rem;
+}
+#stylist-page .cart .services-cart .price i {
+  font-size: 1.7rem;
+  color: #f9af00;
+  cursor: pointer;
+}
+#stylist-page .stylist .stylist-center {
+  background: var(--white);
+}
+#stylist-page .stylist .profile {
+  padding-top: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+#stylist-page .stylist .profile h5 {
+  margin: 0;
+}
+#stylist-page .stylist .profile img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+#stylist-page .stylist .profile .experience {
+  margin-top: 0.65rem;
+}
+#stylist-page .stylist .profile .experience > span {
+  background: var(--primary-600);
+  color: var(--white);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  margin-right: 0.3rem;
+}
+#stylist-page .stylist .about {
+  border-top: solid 1px var(--grey-200);
+}
+#stylist-page .stylist .services .container {
+  border: solid 2px var(--grey-200);
+}
+#stylist-page .stylist .services article:first-child .service {
+  border-top: none;
+}
+#stylist-page .stylist .services article .service-div {
+  padding: 1rem 2rem;
+}
+#stylist-page .stylist .services article .service {
+  border-bottom: solid 2px var(--grey-200);
+  border-top: solid 2px var(--grey-200);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+#stylist-page .stylist .services article .service span {
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+#stylist-page .stylist .services article .products.show {
+  display: block;
+}
+#stylist-page .stylist .services article .products {
+  display: none;
+  background: var(--grey-1300);
+}
+#stylist-page .stylist .services article .products .single-product:not(:first-child) {
+  border-top: solid 1px var(--grey-200);
+  padding-top: 1rem;
+}
+#stylist-page .stylist .services article .products .single-product {
+  padding-bottom: 1rem;
+}
+#stylist-page .stylist .services article .products .single-product span {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+#stylist-page .stylist .services article .products .single-product div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#stylist-page .stylist .services article .products .single-product div span {
+  color: var(--primary-700);
+}
+#stylist-page .stylist .services article .products .single-product div .price {
+  border: solid 2px var(--primary-700);
+  padding: 0.15rem;
+}
+#stylist-page .stylist .gallery {
+  padding-bottom: 2rem;
+}
+#stylist-page .stylist .gallery .carousel-cell {
+  height: 350px;
+  margin: 0 10px;
+  display: flex;
+}
+#stylist-page .stylist .gallery .carousel-cell img {
+  width: 100%;
+  height: 350px;
+}
+#stylist-page .stylist .comments .info-comment .name {
+  font-weight: bolder;
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  #stylist-page .section-center {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px auto;
+    grid-template-areas: "a a" "b c";
+    gap: 1rem;
+  }
+}
+#stylist-page .section-center .alert-section {
+  grid-area: a;
+}
+#stylist-page .section-center .cart {
+  grid-area: c;
+}
+#stylist-page .section-center .stylist {
+  grid-area: b;
+}
+
+#basket-page {
+  background: var(--grey-100);
+}
+#basket-page form {
+  background: var(--white);
+  padding: 2rem;
+  box-shadow: var(--shadow-2);
+}
+#basket-page form label {
+  font-size: 0.85rem;
+}
+#basket-page .cart {
+  margin-bottom: 2rem;
+}
+#basket-page .cart p {
+  margin: 0;
+}
+#basket-page .cart .cart-center {
+  background: var(--white);
+  padding: 1rem 2rem;
+}
+#basket-page .cart .cart-center a.btn {
+  width: 100%;
+  text-align: center;
+  max-width: 400px;
+}
+#basket-page .cart .title {
+  margin-top: 1rem !important;
+  width: 100%;
+  margin: 0 auto;
+}
+#basket-page .cart .booking {
+  margin: 1rem 0;
+}
+#basket-page .cart .booking img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#basket-page .cart .booking .img-container {
+  display: flex;
+  gap: 0.3rem;
+}
+#basket-page .cart .booking .total-text {
+  font-weight: normal !important;
+}
+#basket-page .cart .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px var(--grey-200);
+}
+#basket-page .cart .info.empty {
+  font-style: italic;
+}
+#basket-page .cart .info,
+#basket-page .cart .head {
+  padding: 0.5rem;
+}
+#basket-page .cart .head {
+  display: flex;
+  justify-content: space-between;
+}
+#basket-page .cart .head span {
+  display: flex;
+  font-weight: bolder !important;
+  align-items: center;
+  gap: 0.3rem;
+}
+#basket-page .cart .head span i {
+  font-size: 1.3rem;
+}
+#basket-page .cart .head a {
+  color: var(--primary-400);
+  text-decoration: underline;
+}
+#basket-page .cart .destination,
+#basket-page .cart .services-cart {
+  margin-bottom: 2rem;
+}
+#basket-page .cart .services-cart .price {
+  display: flex;
+  gap: 0.3rem;
+}
+#basket-page .cart .services-cart .price i {
+  font-size: 1.7rem;
+  color: #f9af00;
+  cursor: pointer;
+}
+@media screen and (min-width: 1170px) {
+  #basket-page .basket-center {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "a b";
+  }
+  #basket-page form label {
+    font-size: 0.85rem;
+  }
+  #basket-page .cart {
+    margin-bottom: 0;
+  }
+}
+#basket-page .cart {
+  grid-area: b;
+}
+#basket-page form {
+  grid-area: a;
+}
+
+#login-page {
+  background: var(--grey-200);
+}
+#login-page .form .register-links {
+  display: flex !important;
+  justify-content: space-between;
+}
+#login-page .form .register-links a {
+  text-decoration: underline;
+}
+#login-page .form .btn-block {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

@@ -65,82 +65,26 @@
     </header>
     <!-- end header -->
 
-    <main id="register-page">
-      <section class="section register-section">
-        <div class="section-center">
-          <h5>sinscrire comme coiffeur mobile</h5>
-          <div class="register-center">
-            <!-- desc -->
-            <div class="short-description">
-              <div class="text-container">
-                <p>
-                  Be a Part of The First Network of Mobile Hairstylists & Mobile Barbers.
-                </p>
-                <div>
-                  <p>Create your profile in a few steps :</p>
-                  <ul>
-                    <li>Create your account and enter your details</li>
-                    <li>Create your account and enter your details</li>
-                    <li>Create your account and enter your details</li>
-                    <li>Create your account and enter your details</li>
-                  </ul>
-                </div>
-                <p>
-                  Not sure what you would do with DashStylists.com ? Take 5 min and check
-                  the
-                  <span><a href="#">FAQ here</a></span>
-                </p>
-                <p>Still got questions ? Give us a call : 404-960-1747</p>
-              </div>
-            </div>
-            <!-- form  -->
-            <form>
-              <div class="form-row">
-                <label for="name" class="form-label">Name</label>
-                <input
-                  type="text"
-                  placeholder="hello there"
-                  id="name"
-                  class="form-input"
-                />
-              </div>
-              <div class="form-row">
-                <label for="lname" class="form-label">Last name</label>
-                <input
-                  type="text"
-                  placeholder="hello there"
-                  id="lname"
-                  class="form-input"
-                />
-              </div>
-              <div class="form-row">
-                <label for="adress" class="form-label">Adress</label>
-                <input type="text" id="adress" class="form-input" />
-              </div>
-              <div class="form-row">
-                <label for="code_postal" class="form-label">Code postal</label>
-                <input type="text" id="code_postal" class="form-input" />
-              </div>
-              <div class="form-row">
-                <label for="number" class="form-label">Number</label>
-                <input type="number" id="number" class="form-input" />
-              </div>
-              <div class="form-row">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-input" />
-                <small class="form-alert">please provide value</small>
-              </div>
-              <div class="form-row">
-                <label for="textarea" class="form-label">Demande particuliere</label>
-                <textarea class="form-textarea"></textarea>
-              </div>
-              <button type="submit" class="btn btn-block">S'inscrire</button>
-              <a class="login" href="./login.html">
-                Deja un compte? Click pour te connecter</a
-              >
-            </form>
+    <main id="login-page">
+      <section class="section main login-section">
+        <!-- form  -->
+        <form class="form">
+          <h5>Se connecter a son compte</h5>
+          <div class="form-row">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-input" />
+            <!-- <small class="form-alert">please provide value</small> -->
           </div>
-        </div>
+          <div class="form-row">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input type="password" id="password" class="form-input" />
+          </div>
+          <button type="submit" class="btn btn-block">Se connecter</button>
+          <div class="register-links">
+            <a href="./register.html">click pour t'inscrire</a>
+            <a href="./password-forgot.html"> mot de passe oublie?</a>
+          </div>
+        </form>
       </section>
     </main>
 

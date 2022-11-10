@@ -1,4 +1,5 @@
 // init
+
 @use 'config/variables';
 @use 'global/globalstyles';
 @use 'layouts/layouts.scss';
@@ -13,3 +14,6 @@
 @use 'pages/commande';
 @use 'pages/services';
 @use 'pages/register';
+@use 'pages/stylist';
+@use 'pages/basket';
+@use 'pages/login';
