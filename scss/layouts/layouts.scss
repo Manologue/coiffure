@@ -9,7 +9,7 @@ HEADER
   display: flex;
   align-items: center;
   transition: var(--transition);
-  z-index: 1000;
+  z-index: 999;
 
   .navbar {
     display: flex;

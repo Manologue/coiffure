@@ -5,8 +5,9 @@
 @use 'layouts/layouts.scss';
 
 // compoments
-@use 'components/searchFrom';
+@use 'components/searchForm';
 @use 'components/results';
+@use 'components/modal';
 
 // pages
 @use 'pages/home';

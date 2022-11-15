@@ -1,12 +1,14 @@
 // components
 import './components/header.js'
 
+import './components/flatpickr.js'
+import './components/modals.js'
+import './components/searchForm.js'
 import './components/flickity.js'
 
 // pages
 import './pages/home.js'
 import './pages/stylist.js'
-import './pages/basket.js'
 
 // const options = {
 //   method: 'GET',

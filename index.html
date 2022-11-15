@@ -13,7 +13,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
     <!-- custom css file link  -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
 
@@ -75,16 +78,46 @@
             <span>TROUVER UN COIFFEUR PRÈS DE CHEZ VOUS</span>
             <form class="home-form" action="search.html">
               <div class="field">
-                <input type="text" name="location" placeholder="where" />
-                <i class="fa-solid fa-location-dot"></i>
+                <input
+                  type="text"
+                  id="location-input"
+                  name="location"
+                  placeholder="where"
+                  autocomplete="off"
+                  readonly="readonly"
+                />
+                <div class="icons">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="uil uil-times"></i>
+                </div>
               </div>
               <div class="field">
-                <input type="text" name="services" placeholder="Enter services" />
-                <i class="fa-solid fa-scissors"></i>
+                <input
+                  type="text"
+                  id="services-input"
+                  name="services"
+                  placeholder="Enter services"
+                  autocomplete="off"
+                  readonly="readonly"
+                />
+                <div class="icons">
+                  <i class="fa-solid fa-scissors"></i>
+                  <i class="uil uil-times"></i>
+                </div>
               </div>
               <div class="field">
-                <input type="date" name="day" placeholder="Enter day" />
-                <i class="fa-solid fa-calendar-days"></i>
+                <input
+                  type="date"
+                  id="search-day"
+                  name="day"
+                  lang="fr-CA"
+                  placeholder="Enter day"
+                  value=""
+                />
+                <div class="icons">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <i class="uil uil-times"></i>
+                </div>
               </div>
               <div class="field search">
                 <button class="btn" type="submit">search</button>
@@ -153,18 +186,6 @@
         </div>
       </div>
 
-      <!-- <section class="section search">
-        <h4 class="title">Nom de la ville ou vous souhaiter vous coiffer</h4>
-        <div class="section-center search-center">
-          <div class="search-input">
-            <a href="" target="_blank" hidden></a>
-            <input type="text" placeholder="Entrer nom de ville ..." />
-            <div class="autocom-box"></div>
-            <div class="icon"><i class="fas fa-search"></i></div>
-          </div>
-        </div>
-      </section> -->
-
       <!-- gallery  -->
       <section class="section why-section">
         <div class="section-center why-center">
@@ -200,37 +221,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="section gallery-slider">
-        <div class="main-carousel section-center">
-          <div class="cell">
-            <img src="product_image/pexels-ali-pazani-2787341.jpg" alt="" />
-          </div>
-          <div class="cell">
-            <img src="product_image/pexels-anna-shvets-4611959.jpg" alt="" />
-          </div>
-          <div class="cell">
-            <img src="product_image/pexels-ayoola-duke-3561145.jpg" alt="" />
-          </div>
-          <div class="cell">
-            <img src="product_image/pexels-davidowaga-3563869.jpg" alt="" />
-          </div>
-          <div class="cell">
-            <img src="product_image/pexels-faruk-tokluoğlu-8777575.jpg" alt="" />
-          </div>
-          <div class="cell">
-            <img src="product_image/pexels-godisable-jacob-718978.jpg" alt="" />
-          </div>
-          <div class="cell">
-            <img src="product_image/pexels-karl-rayson-10699509.jpg" alt="" />
-          </div>
-          <div class="cell">
-            <img src="product_image/pexels-tomaz-barcellos-1987301.jpg" alt="" />
-          </div>
-        </div>
-        <div class="btn-container">
-          <a href="./searchTown.html" class="btn">se faire coiffer</a>
-        </div>
-      </section> -->
+
       <!----------- products layout ----------->
       <section class="section services" id="services">
         <h4 style="color: white" class="title">Nos services</h4>
@@ -460,6 +451,100 @@
           <a href="register.html" class="btn">Devenir coiffeur a domicile</a>
         </div>
       </section>
+      <!-- ************************** modals ************************ -->
+      <!-- modal location -->
+      <div class="modal-overlay" id="modal-location">
+        <div class="popup">
+          <header>
+            <span>Location</span>
+            <div class="close"><i class="uil uil-times"></i></div>
+          </header>
+          <div class="content">
+            <span>
+              <i class="fa-solid fa-location-dot"></i> Ou est-ce que le coiffeur doit
+              venir</span
+            >
+            <div class="form-row">
+              <input
+                type="text"
+                placeholder="entrer votre address..."
+                id="name"
+                class="form-input"
+              />
+            </div>
+
+            <div class="results">
+              <p class="error">
+                We couldn't find any matches. Try checking the spelling and searching
+                again.
+              </p>
+              <span
+                ><i class="fa-solid fa-earth-europe"></i> Rechercher des coiffeurs pres de
+                chez vous</span
+              >
+              <div class="list">
+                <span data-location="Tokolo venir">
+                  <i class="fa-solid fa-location-dot"></i> Tokolo venir</span
+                >
+                <span data-location="koloi">
+                  <i class="fa-solid fa-location-dot"></i> koloi</span
+                >
+                <span data-location="Gachi">
+                  <i class="fa-solid fa-location-dot"></i> Gachi</span
+                >
+                <span data-location="Moromo">
+                  <i class="fa-solid fa-location-dot"></i> Moromo</span
+                >
+                <span data-location="venir10">
+                  <i class="fa-solid fa-location-dot"></i> venir10</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of modal location -->
+      <!-- modal services -->
+      <div class="modal-overlay" id="modal-services">
+        <div class="popup">
+          <header>
+            <span>
+              <i class="fa-solid fa-scissors"></i>
+              Services
+            </span>
+            <div class="close"><i class="uil uil-times"></i></div>
+          </header>
+          <div class="content">
+            <div class="list">
+              <span><input type="checkbox" value="meches" id="" /> meches </span>
+              <span><input type="checkbox" value="totoko" id="" /> totoko </span>
+              <span><input type="checkbox" value="logono" id="" /> logono </span>
+              <span><input type="checkbox" value="fukaka" id="" /> fukaka </span>
+              <span><input type="checkbox" value="loyi" id="" /> loyi </span>
+            </div>
+            <button class="btn">Ajouter</button>
+          </div>
+        </div>
+      </div>
+      <!--end of modal services -->
+      <!-- modal alert  -->
+      <div class="modal-overlay" id="modal-danger">
+        <div class="popup">
+          <header>
+            <span>
+              <i class="fa-solid fa-circle-exclamation"></i> Espace adresse vide
+            </span>
+            <div class="close"><i class="uil uil-times"></i></div>
+          </header>
+          <div class="content">
+            <p>
+              s'il vous plait veillez entrer une adresse pour que nous puissions vous
+              mettre en contact avec les meilleur coiffeur de votre region
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end of modal alert -->
     </main>
     <!------------------------------END OF HOME PAGE  ----------------------------->
     <footer class="section footer">
@@ -537,6 +622,8 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- app js -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script> -->
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/de.js"></script>
     <script type="module" src="js/app.js"></script>
   </body>
 </html>
