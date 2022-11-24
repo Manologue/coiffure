@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@supercharge/strings": "^1.29.0",
-    "country-state-city": "^3.1.2"
-  }
-}
